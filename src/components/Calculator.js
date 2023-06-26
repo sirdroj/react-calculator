@@ -20,7 +20,9 @@ export const Calculator = () => {
     setct("")
   }
   function eva(){
-    setct(eval(ct.toString()))
+    
+    // setct(eval(ct.toString()))
+    setct(Math.floor(eval(ct.toString()) * 100) / 100);
   }
   return (
     <div className='calc_wrapper'>
